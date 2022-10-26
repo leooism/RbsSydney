@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="payment.css">
+        <link rel="stylesheet" href="./confirmation.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>RBS</title>
+    </head>
+    <body>
+      
+      <div class="heading">
+        <div class="logo"><a href="#"><img src="./Images/125564228_2450978208540146_4963045854566885250_n.png"></a>
+        </div>
+
+            <nav>
+                <ul>
+               <a href="Home.html">Home</a>
+
+                <a href="services.html">Services</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="payment.html">Payment</a>
+                </ul>
+            </nav>
+      </div>
+        <main>
+      
+  <div class="container">
+
+    <div class="checkout-panel">
+        <div class="panel-body">
+          <h2 class="title">Terms and Condition!</h2>
+       
+          <div class="progress-bar">
+            <div class="step active"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+          </div>
+          <div class="terms">
+            <div class="description">
+              <p>            By accepting these terms of service or otherwise using the service(As Defined Below), you agree to the terms and conditions in these terms of service. It you are entering into these terms of service as an  individual, the term 'you' refers to you. If you are entering into this agreement on behalf of a company or other legal entity, you represent that you have the authority to bind such entity and its affiliates to these terms and conditions in which case the term "you" shall refer to such entity. It you do not have such authority, or if you do not agree with these terms and conditions. You must not accept these terms of service and may not use the service.
+              </p>
+              <button class = 'btn btn-cancel'>CANCEL</button>
+              <button class = 'btn btn-agree' id = 'agree'>I AGREE</button>
+            </div>
+          </div>
+
+      
+           
+          </div>
+          <div class="panel-footer">
+            <a href="./agent.html"> <button class="btn back-btn">Back</button> </a>
+            <a href="./Payment.html"> <button class="btn next-btn">Next Step</button>
+            </a>
+          </div>
+        </div>
+               
+  </div>
+ </main>
+      
+      
+
+   <div class="footer">
+                <div class="content"><p>Copyright © 2020 Radiant Build Sydney</p></div>
+       <div class="font"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="#" class="fa fa-facebook" ></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-google"></a></div>
+        </div>
+ 
+                    
+        
+      
+    </body>
+   <script>
+   const agree = document.getElementById('agree');
+     const next = document.querySelector('.next-btn')
+     agree.addEventListener('click', function(){
+       next.style.display = 'block';
+
+     })  
+   </script>
+</html>

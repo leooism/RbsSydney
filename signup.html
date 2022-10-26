@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign up</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#navigation").load("head.html")
+        })
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div id="navigation"></div>
+        <div class="signup__container">
+            <div class="signup">
+                <h1>Sign Up</h1>
+                <form action="">
+                    <div class="fname">
+                        <input type="text" id = "fname" placeholder = "First Name">
+
+                    </div>
+                    <div class="lname">
+                        <input type="text" id = "lname" placeholder = "Last Name">
+
+                    </div>
+                    <div class="email">
+                        <input type="text" id = "email" placeholder = "Email">
+                    </div>
+
+                    <div class="username">
+                        <input type="text"  id = "username"placeholder = "Enter your username">
+                    </div>
+                    <div class="password">
+
+                        <input type="password" id = 'password' placeholder = "Create a password">
+                    </div>
+                    <div class="passwordConfirm">
+                        <input type="password" id = 'passwordConfirm' placeholder = "Rewrite your password">
+
+                    </div>
+<button class="signupbtn" id="signup">Sign up</button>
+<button class="loginbtn" id="login">Back to log in</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="policy">
+            <div class="policy__text">
+              Copyright &copy 2020. All rights reserved. ;
+            </div>
+            <div class="icons">
+              <i class="fas fa-facebook" style="font-size: 44px;"></i>
+              <i class="fas fa-google" style="font-size: 44px;"></i>
+              <i class="fas fa-twitter" style="font-size: 44px;"></i>
+         
+            </div>
+          </div>
+        </div>
+      
+    </div>
+</body>
+</html>

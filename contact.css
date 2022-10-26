@@ -1,0 +1,166 @@
+.logo img{
+    position: absolute;
+    height:60px;
+    width:60px;
+    color:white;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+nav{
+    background-color:green;
+    overflow: hidden;
+    height:70px;
+    padding-left: 200px;
+    width:100%;
+}
+nav a{
+    width:200px;
+    display:block;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+}
+nav a:hover{
+    background: purple;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+nav a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+body{
+    background-color: grey;
+    background-image: url(images/background6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    background-color:skyblue;
+    height: 1400px;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+.footer{
+    clear:both;
+    position: auto;
+   text-align: center;
+  background-color: darkgoldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; 
+}
+.content{
+    padding-top: 10px;
+}
+.fa {
+  padding:10px;
+  font-size: 10px;
+  width: 20px;
+  text-align: right;
+  text-decoration: none;
+  padding-bottom:none;
+
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+    text-align: center;
+   
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+    text-align: center;
+   
+}
+.fa-linkedin{
+     background: #55ACEE;
+  color: white;
+   text-align: center;
+
+}
+.fa-google{
+    
+     background: #55ACEE;
+  color: white;
+   text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 16px;
+    color: none;
+    font-family: Arial, Helvetica, sans-serif;
+}

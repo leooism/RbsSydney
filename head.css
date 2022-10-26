@@ -1,0 +1,141 @@
+.container__bodyHeader {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(32, 30, 30);
+  flex-wrap: wrap;
+}
+.body_header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+
+.bodyHeader__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bodyHeader__navigation ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.bodyHeader__navigation ul li {
+  margin: 19px;
+  padding: 0 5px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+ul li a {
+  position: relative;
+}
+.dropdown__container {
+  display: inline-block;
+  position: relative;
+}
+
+.bodyHeader__navigation ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background-color: white;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+ul li a:hover::after {
+  height: 1px;
+}
+
+.container__bodyHeader__logo {
+  width: 50px;
+  height: 100px;
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dropdown__body {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 96, 67);
+  transition: 0.6s;
+  z-index: 100;
+}
+.dropdown__body ul {
+  display: block;
+}
+.dropdown__body ul li {
+  margin: 23px;
+}
+.dropdown__container:hover .dropdown__body {
+  display: block;
+}
+.nav__contact {
+  padding: 10px;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  height: 50px;
+}
+.bars {
+  display: flex;
+  flex-direction: column;
+}
+.bars > div {
+  display: none;
+  width: 20px;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 2px;
+}
+.bars__container ul {
+  display: none;
+}
+.login {
+  position: relative;
+  display: inline-block;
+}
+
+.login > .login__tooltip {
+  display: none;
+  position: absolute;
+  top: 150%;
+  margin-left: -100px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.726);
+  width: 250px;
+  text-align: center;
+  border-radius: 50px;
+  transform: (-50%, -50%);
+}
+
+.login__tooltip::after {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.login:hover .login__tooltip {
+  display: block;
+  z-index: 100;
+}
+@media only screen and (max-width: 700px) {
+  .bodyHeader__navigation ul {
+    display: none;
+  }
+  .bars__container ul {
+    display: none;
+    flex-direction: column;
+  }
+  .bodyHeader__navigation .bars__container .bars > div {
+    display: block;
+  }
+}

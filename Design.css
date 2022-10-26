@@ -1,0 +1,165 @@
+.logo img{
+    position: absolute;
+    height:60px;
+    width:60px;
+    color:white;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+nav{
+    background-color:green;
+    overflow: hidden;
+    height:70px;
+    padding-left: 200px;
+    width:100%;
+}
+nav a{
+    width:200px;
+    display:block;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+}
+.row{
+  width: 1100px;
+  margin: 0 auto;
+}
+nav a:hover{
+    background: purple;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+nav a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+main{
+    background-color:white;
+    height: 2000px;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin: 40px;
+  padding: 0 px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+.about-section{
+    padding-left:15px;
+    padding-right:10px;
+    height:700px;
+    text-align: center;
+   
+}
+
+
+h1{
+   position:right;
+    display:inline-block;
+    text-align: right;
+}
+
+.container {
+  padding: 0 16px;
+  
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: orangered;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+.footer {
+  background-color: darkgoldenrod;
+  font-family: Arial;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.footer > .copyright {
+  margin-top: 13px;
+}
+.font {
+  margin: 12px 0;
+}
+
+.fa {
+  padding: 10px;
+  text-decoration: none;
+  padding-bottom: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+.fa-google {
+  background: red;
+  color: white;
+}
